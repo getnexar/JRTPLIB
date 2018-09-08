@@ -88,7 +88,6 @@ else (SRTP_ENABLED)
 endif (SRTP_ENABLED)
 
 if (CMAKE_CROSSCOMPILING)
-	option (JRTPLIB_USE_BIGENDIAN "Target platform is big endian" ON)
 	if (JRTPLIB_USE_BIGENDIAN)
 		set(RTP_ENDIAN "#define RTP_BIG_ENDIAN")
 	else (JRTPLIB_USE_BIGENDIAN)
